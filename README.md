@@ -75,6 +75,12 @@ neomind-ai/
 🎥 Demo Video
 📺 Watch Project Demo on YouTube <!-- Replace with your actual video link -->
 
+# NeoMind - AI Chat Assistant 🤖
+
+🚀 **Live Demo**: [https://your-live-link.render.com](https://neomind-tqbu.onrender.com/)
+📂 **GitHub Repo**: [NeoMind on GitHub](https://github.com/bhavanisankardavuluri10/neomind-deploy)
+
+
 
 
 🙋‍♂️ Developer
