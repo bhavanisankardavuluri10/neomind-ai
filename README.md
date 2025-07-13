@@ -85,13 +85,3 @@ Bhavani Sankar Davuluri
 📜 License
 This project is for educational and demonstration purposes under the MIT License.
 
-
-
-
-
-
-
-
-
-Ask ChatGPT
-
