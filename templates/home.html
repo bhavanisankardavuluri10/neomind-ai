@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block title %}Home | Neo Chatbot{% endblock %}
+
+{% block content %}
+<div class="hero">
+  <div class="hero-text">
+    <h1>Welcome to Neo Chatbot</h1>
+    <p>Your intelligent assistant powered by multiple AI models: Gemini  AI. Built for precision, reliability, and performance.</p>
+    <p class="powered">Powered by <span>Gemini</span>
+  </div>
+  <div class="hero-images">
+    <img src="{{ url_for('static', filename='images/undraw_group-chat_4xw0.png') }}" alt="Chat Illustration" />
+    <img src="{{ url_for('static', filename='images/undraw_work-chat_hc3y.png') }}" alt="AI Chat Work" />
+  </div>
+</div>
+{% endblock %}

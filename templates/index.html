@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>NeoMind | AI Chat Assistant</title>
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}" />
+  <link rel="icon" href="{{ url_for('static', filename='chatbot-icon.png') }}" />
+
+  <!-- Font Awesome for logo icon -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+  <!-- Markdown support -->
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+</head>
+<body data-user-email="{{ session['user'] }}">
+  <div class="main-container">
+
+    <!-- Sidebar -->
+    <aside class="sidebar" id="sidebar">
+      <h2>Conversations</h2>
+      <ul id="chat-history"></ul>
+      <button class="logout-btn" id="logout-btn">Logout</button>
+    </aside>
+
+    <!-- Chat section -->
+    <div class="chat-section">
+      
+      <!-- Top Bar with branding and sidebar toggle -->
+      <div class="top-bar">
+        <div class="brand">
+          <button id="toggleSidebar" class="sidebar-toggle">☰</button>
+          <i class="fa-solid fa-head-side-gear"></i>
+          <span>NeoMind</span>
+        </div>
+        <h1 class="chat-title">AI Chat Assistant</h1>
+      </div>
+
+      <!-- Welcome Message -->
+      <div id="welcome-quote" class="welcome-message">
+        <h2>Hi, {{ session['user'].split('@')[0] }} 👋</h2>
+        <p>"Ask me anything. I'm here to assist you!"</p>
+      </div>
+
+      <!-- Chat Display Area -->
+      <div class="chat-box" id="chat-box"></div>
+
+      <!-- Typing Indicator -->
+      <div id="typing-indicator" class="typing-indicator hidden">Thinking<span class="dots">...</span></div>
+
+      <!-- Chat Input Bar -->
+      <div class="input-bar">
+        <button class="plus-btn">+</button>
+        <input id="chat-input" type="text" placeholder="Ask something..." autocomplete="off" />
+        <button id="send-btn" class="send-btn">Send</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- JavaScript Logic -->
+  <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

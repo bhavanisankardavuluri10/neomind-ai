@@ -1,0 +1,6 @@
+Flask==2.3.2
+python-dotenv==1.0.0
+google-generativeai==0.4.1
+
+
+"pip install -r requirements.txt"---- comand to install all the dependences in the requirements.txt file
