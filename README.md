@@ -80,7 +80,7 @@ neomind-ai/
 🚀 **Live Demo**: [https://your-live-link.render.com](https://neomind-tqbu.onrender.com/)
 📂 **GitHub Repo**: [NeoMind on GitHub](https://github.com/bhavanisankardavuluri10/neomind-deploy)
 
-
+refrer this  to undestnd the completely  documentation {https://docs.google.com/document/d/1gk9afgdZL2WfPvPyShs_xiG0luhurA614_hXvluR5V0/edit?usp=sharing}
 
 
 🙋‍♂️ Developer
